@@ -13,13 +13,13 @@ client.on('ready', () => {
 })
 
 .on('messageReactionAdd', (reaction, user) => {
-    if (reaction.emoji.name == 'pushpin') {
+    if (reaction.emoji.name == '📌') {
         reaction.message.pin();
     }
 })
 
 .on('messageReactionRemove', (reaction, user) => {
-    if (reaction.emoji.name = 'pushpin') {
+    if (reaction.emoji.name = '📌') {
         reaction.message.unpin();
     }
 })
