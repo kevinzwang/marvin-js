@@ -1,5 +1,5 @@
 /*
-    A ping pong bot, whenever you send "ping", it replies "pong".
+    A ping pong bot, whenever you send "ping", it replies "pong and it tells the time it took for that ping to be processed".
 */
 
 // Import the discord.js module
