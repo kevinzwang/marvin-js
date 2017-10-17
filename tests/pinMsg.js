@@ -1,3 +1,7 @@
+/*
+    pins message that is reacted with a pushpin
+*/
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = 'your token here';
