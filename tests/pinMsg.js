@@ -1,6 +1,7 @@
 /*
-    pins message that is reacted with a pushpin
+    pins message that is reacted with a pushpin, and unpins if reaction is removed
 */
+
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
