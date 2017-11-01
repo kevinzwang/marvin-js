@@ -1,0 +1,32 @@
+{
+  "name": "marvin-js",
+  "version": "0.0.1",
+  "description": "The Chaos Discord server bot, now written in Javascript!",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "discord.js-commando": "^0.9.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinzwang/marvin-js.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "javascript",
+    "js",
+    "node"
+  ],
+  "author": "kevinzwang",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kevinzwang/marvin-js/issues"
+  },
+  "homepage": "https://github.com/kevinzwang/marvin-js#readme"
+}
