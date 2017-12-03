@@ -17,17 +17,21 @@ module.exports = class XkcdCommand extends Commando.Command {
         })
     }
     run (msg, args) {
-        var url = 'https://xkcd.com/info.0.json'
-        request({
-            url: url, 
-            json: true
-        }, function (err, resp, body) {
-            msg.channel.send({embed: {
-                title: body.title + ' (' + body.num + ')',
-                image: { url:body.img },
-                description: body.alt,
-                url: url
-            }})
-        })
+        if (!isNaN(args)) {
+            var url = 'https://xkcd.com/' + args + '/info.0.json'
+            request({
+                url: url,
+                json: true
+            }, function (err, resp, body) {
+                msg.channel.send({embed: {
+                    title: body.title + ' (' + body.num + ')',
+                    image: { url:body.img },
+                    description: body.alt,
+                    url: url
+                }})
+            })
+        } else {
+            msg.reply("please enter a valid number.")
+        }
     }
 }
