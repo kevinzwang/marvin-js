@@ -22,7 +22,8 @@ client
 
 client.registry
     .registerGroups([
-        ['fun', 'Commands just for fun!']
+        ['fun', 'Fun!'],
+        ['admin', 'Admin']
     ])
     .registerCommandsIn(path.join(__dirname, 'commands'))
     .registerDefaults()
